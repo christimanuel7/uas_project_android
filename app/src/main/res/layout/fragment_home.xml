@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <Button
+                android:id="@+id/BtnCari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Track Your Country"
+                android:textSize="20dp"
+                android:textColor="@color/alert"
+                android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+
+<!--       <TableLayout-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="match_parent">-->
+
+<!--           <TableRow>-->
+<!--                   <TextView-->
+<!--                       android:id="@+id/txtContinent"-->
+<!--                       android:layout_weight="2"-->
+<!--                       android:gravity="center"-->
+<!--                       android:padding="5dp"-->
+<!--                       android:text="Continent"-->
+<!--                       android:textColor="#000" />-->
+
+<!--                   <TextView-->
+<!--                       android:id="@+id/txtCases"-->
+<!--                       android:layout_weight="2"-->
+<!--                       android:gravity="center"-->
+<!--                       android:padding="5dp"-->
+<!--                       android:text="Cases"-->
+<!--                       android:textColor="#000" />-->
+
+<!--                   <TextView-->
+<!--                       android:id="@+id/txtDeath"-->
+<!--                       android:layout_weight="2"-->
+<!--                       android:gravity="center"-->
+<!--                       android:padding="5dp"-->
+<!--                       android:text="Death"-->
+<!--                       android:textColor="#000" />-->
+
+<!--                   <TextView-->
+<!--                       android:id="@+id/txtRecovered"-->
+<!--                       android:layout_weight="2"-->
+<!--                       android:gravity="center"-->
+<!--                       android:padding="5dp"-->
+<!--                       android:text="Recovered"-->
+<!--                       android:textColor="#000" />-->
+<!--           </TableRow>-->
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               tools:listitem="@layout/item_layout"/>
+
+</LinearLayout>

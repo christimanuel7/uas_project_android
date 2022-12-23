@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    GRUP MENU 1-->
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_menu"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="MENU"/>
+
+    </group>
+
+    <!--    GRUP MENU 2-->
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_global"
+            android:icon="@drawable/ic_baseline_brightness_low_24"
+            android:title="GLOBAL"/>
+
+
+    </group>
+</menu>
